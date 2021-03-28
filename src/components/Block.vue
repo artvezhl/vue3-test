@@ -7,7 +7,18 @@
 <script>
 export default {
   name: "Block",
-  props: ['delay']
+  props: ['delay'],
+  data() {
+    return {
+      showBlock: false
+    }
+  },
+  mounted() {
+    console.log('component mounted')
+  },
+  updated() {
+
+  }
 }
 </script>
 

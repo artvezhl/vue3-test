@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Block from "@/components/Block";
+import Block from "./components/Block.vue";
 
 export default {
   name: 'App',
@@ -18,8 +18,9 @@ export default {
   },
   methods: {
     start() {
-      this.delay = 2000 + Math.random() * 5
+      this.delay = 2000 + Math.random() * 5000
       this.isPlaying = true
+      console.log(this.delay)
     }
   }
 }
